@@ -22,7 +22,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXxcB4MSB-Oa9d8WaG4p1KmhhUrSgckTU" type="text/javascript"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key={$mapKey}" type="text/javascript"></script>
       <script src="/web/js/libs.js" type="text/javascript"></script>
       <script src="/web/js/app.min.js" type="text/javascript"></script>
     {/block}
