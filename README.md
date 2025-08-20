@@ -1,5 +1,7 @@
 # CMS Base (Repository-Ready) — MySQL + Disclaimer
 
+The project that was initially started in 2011 and grew into a learning opportunity.
+
 > **Important compatibility notice**  
 Runs on **PHP 7.4** for legacy dependency compatibility.  
 **Please plan to upgrade to PHP 8.x** (replace PHPExcel with PhpSpreadsheet, pin Composer deps to PHP 8+, run CI on PHP 8.2+, validate Symfony components). 
