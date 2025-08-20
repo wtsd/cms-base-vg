@@ -1,0 +1,148 @@
+Index: resources/styles/primary.css
+===================================================================
+--- resources/styles/primary.css
++++ resources/styles/primary.css
+@@ -142,11 +142,8 @@
+     max-width: 100%;
+     padding-bottom: 0; } }
+ .normal-block {
+   background: rgba(255, 255, 255, 0.9);
+-  -webkit-border-radius: 3px;
+-  -moz-border-radius: 3px;
+-  -ms-border-radius: 3px;
+   border-radius: 3px;
+   padding: 10px;
+   padding-bottom: 50px; }
+ 
+@@ -233,10 +230,8 @@
+     position: fixed;
+     background: #eee;
+     left: 0;
+     top: 0;
+-    -webkit-box-shadow: 0 0 8px #000;
+-    -moz-box-shadow: 0 0 8px #000;
+     box-shadow: 0 0 8px #000; } }
+ .header-menu.navbar {
+   margin-bottom: 0; }
+ 
+@@ -513,10 +508,8 @@
+     display: block;
+     margin-bottom: 0; }
+   .offer-item:hover {
+     /* border: 1px solid #ff0000; */
+-    -webkit-box-shadow: 0 0 8px #505050;
+-    -moz-box-shadow: 0 0 8px #505050;
+     box-shadow: 0 0 8px #505050; }
+ 
+ @media screen and (max-width: 700px) {
+   .offer-item {
+@@ -555,53 +548,41 @@
+   height: 15px; }
+ 
+ .quantity {
+   width: 50px; }
+-
+-@-moz-keyframes dropDown {
+-  0% {
+-    -moz-transform: translateY(-100%); }
+-  100% {
+-    -moz-transform: translateY(0); } }
+ @-webkit-keyframes dropDown {
+   0% {
+     -webkit-transform: translateY(-100%); }
+   100% {
+     -webkit-transform: translateY(0); } }
+ @keyframes dropDown {
+   0% {
++    -webkit-transform: translateY(-100%);
++            transform: translateY(-100%); }
+-    transform: translateY(-100%); }
+   100% {
++    -webkit-transform: translateY(0);
++            transform: translateY(0); } }
+-    transform: translateY(0); } }
+ .content_ani {
+   -webkit-animation-name: rightOut;
+-  -moz-animation-name: rightOut;
+   animation-name: rightOut;
+   -webkit-animation-duration: .5s;
+-  -moz-animation-duration: .5s;
+   animation-duration: .3s;
+   -webkit-animation-timing-function: ease-in;
+-  -moz-animation-timing-function: ease-in;
+   animation-timing-function: ease-in;
+   -webkit-animation-iteration-count: 1;
+-  -moz-animation-iteration-count: 1;
+   animation-iteration-count: 1; }
+-
+-@-moz-keyframes rightOut {
+-  0% {
+-    -moz-transform: translateX(200%); }
+-  100% {
+-    -moz-transform: translateX(0); } }
+ @-webkit-keyframes rightOut {
+   0% {
+     -webkit-transform: translateX(200%); }
+   100% {
+     -webkit-transform: translateX(0); } }
+ @keyframes rightOut {
+   0% {
++    -webkit-transform: translateX(200%);
++            transform: translateX(200%); }
+-    transform: translateX(200%); }
+   100% {
++    -webkit-transform: translateX(0);
++            transform: translateX(0); } }
+-    transform: translateX(0); } }
+ @-webkit-keyframes fall-from-top {
+   0% {
+     position: absolute;
+     top: -100px;
+@@ -634,20 +615,22 @@
+     right: 0;
+     opacity: .9; } }
+ @-webkit-keyframes appear-from-back {
+   0% {
++    -webkit-transform: scale(0);
++            transform: scale(0); }
+-    transform: scale(0); }
+   70% {
++    -webkit-transform: scale(0);
++            transform: scale(0); }
+-    transform: scale(0); }
+   80% {
++    -webkit-transform: scale(1.1);
++            transform: scale(1.1);
+-    transform: scale(1.1);
+     color: #fff; }
+   100% {
++    -webkit-transform: scale(1);
++            transform: scale(1); } }
+-    transform: scale(1); } }
+ .anim {
+   -webkit-animation: fall-from-bottom 1s ease;
+-  -moz-animation: fall-from-bottom 1s ease;
+-  -o-animation: fall-from-bottom 1s ease;
+   animation: fall-from-bottom 1s ease; }
+ 
+ .all-events h2 {
+   font-size: 24px;
+@@ -711,11 +694,8 @@
+   text-align: right; }
+ .event-registration .form-input input,
+ .event-registration .form-input textarea {
+   width: 250px;
+-  -webkit-border-radius: 3px;
+-  -moz-border-radius: 3px;
+-  -ms-border-radius: 3px;
+   border-radius: 3px;
+   border: 1px solid #a0a0a0; }
+ 
+ /* Comments */
+@@ -731,6 +711,4 @@
+       color: #a0a0a0;
+       font-size: .8em;
+       display: inline-block;
+       float: right; }
+-
+-/*# sourceMappingURL=primary.css.map */

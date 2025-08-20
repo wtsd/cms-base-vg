@@ -1,0 +1,15 @@
+/vendor/
+/node_modules/
+/.env
+/.env.local
+/.idea/
+/.vscode/
+/composer.phar
+/.phpunit.result.cache
+/dist/vendor/
+/dist/logs/*
+!/dist/logs/.keep
+/dist/temp/*
+/dist/uploads/*
+!/dist/uploads/.keep
+**/.DS_Store

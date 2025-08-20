@@ -1,0 +1,12 @@
+# You need to copy this file to database-dev.php
+# and database-production.php for the development
+# environment and production environment
+# respectively. Keep these files in secret and
+# never share them with anyone.
+
+driver: pdo_mysql
+host: 127.0.0.1
+user: usr_name
+password: s3cr3t!Pa55WORD
+dbname: db_name
+charset: utf8

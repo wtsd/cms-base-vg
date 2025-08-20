@@ -1,0 +1,50 @@
+noreplymail: Robot <no.reply@example.dev>
+adminmail: admin@example.dev
+default_cat: home
+base_url: example.dev
+environments:
+    example.com: PRODUCTION
+    example-stage.dev: STAGE
+    example.dev: DEV
+default_environment: example.dev
+
+languages: [ru]
+default_language: ru
+timezone: Europe/Moscow
+locale: ru_RU.utf-8
+locale-2: rus_RUS.utf-8
+locale-3: ru_RU.utf-8
+lc_time_names: ru_RU
+template: resources/views/primary
+
+with_watermark: false
+watermark_file: /img/watermark.png
+admin_prefix: adm
+
+# Features
+is_feedback: false
+auto_generate_menu: true
+is_cart: true
+with_news: true
+news_cat: 5
+news_count: 10
+is_authentication: false
+
+market: true
+offers_special: true
+offers_latest: true
+req_calback: true
+category-menu: true
+with_slider: true
+
+catalogue:
+    perpage: 12
+    url: '/products/%s/'
+
+no_www: true
+only_https: false
+no_session: false
+rerouting: true
+
+is_captcha: false
+perpage: 10

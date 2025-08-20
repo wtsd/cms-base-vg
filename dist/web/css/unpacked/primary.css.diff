@@ -1,0 +1,172 @@
+Index: web/css/unpacked/primary.css
+===================================================================
+--- web/css/unpacked/primary.css
++++ web/css/unpacked/primary.css
+@@ -63,11 +63,8 @@
+ .filetype.xml {
+   background-position: -225px -230px;
+ }
+ @mixin border-radius($radius) {
+-  -webkit-border-radius: $radius;
+-  -moz-border-radius: $radius;
+-  -ms-border-radius: $radius;
+   border-radius: $radius;
+ }
+ .panel-green {
+   border-color: #5cb85c;
+@@ -297,10 +294,8 @@
+     position: fixed;
+     background: #eee;
+     left: 0;
+     top: 0;
+-    -webkit-box-shadow: 0 0 8px #000;
+-    -moz-box-shadow: 0 0 8px #000;
+     box-shadow: 0 0 8px #000;
+   }
+ }
+ .header-menu.navbar {
+@@ -647,10 +642,8 @@
+   margin-bottom: 0;
+ }
+ .offer-item:hover {
+   /* border: 1px solid #ff0000; */
+-  -webkit-box-shadow: 0 0 8px #505050;
+-  -moz-box-shadow: 0 0 8px #505050;
+   box-shadow: 0 0 8px #505050;
+ }
+ @media screen and (max-width: 700px) {
+   .offer-item {
+@@ -698,24 +691,8 @@
+ }
+ .quantity {
+   width: 50px;
+ }
+-@-moz-keyframes dropDown {
+-  0% {
+-    -moz-transform: translateY(-100%);
+-  }
+-  100% {
+-    -moz-transform: translateY(0);
+-  }
+-}
+-@-webkit-keyframes dropDown {
+-  0% {
+-    -webkit-transform: translateY(-100%);
+-  }
+-  100% {
+-    -webkit-transform: translateY(0);
+-  }
+-}
+ @keyframes dropDown {
+   0% {
+     transform: translateY(-100%);
+   }
+@@ -723,108 +700,22 @@
+     transform: translateY(0);
+   }
+ }
+ .content_ani {
+-  -webkit-animation-name: rightOut;
+-  -moz-animation-name: rightOut;
+   animation-name: rightOut;
+-  -webkit-animation-duration: .5s;
+-  -moz-animation-duration: .5s;
+   animation-duration: .3s;
+-  -webkit-animation-timing-function: ease-in;
+-  -moz-animation-timing-function: ease-in;
+   animation-timing-function: ease-in;
+-  -webkit-animation-iteration-count: 1;
+-  -moz-animation-iteration-count: 1;
+   animation-iteration-count: 1;
+ }
+-@-moz-keyframes rightOut {
+-  0% {
+-    -moz-transform: translateX(200%);
+-  }
+-  100% {
+-    -moz-transform: translateX(0);
+-  }
+-}
+-@-webkit-keyframes rightOut {
+-  0% {
+-    -webkit-transform: translateX(200%);
+-  }
+-  100% {
+-    -webkit-transform: translateX(0);
+-  }
+-}
+ @keyframes rightOut {
+   0% {
+     transform: translateX(200%);
+   }
+   100% {
+     transform: translateX(0);
+   }
+ }
+-@-webkit-keyframes fall-from-top {
+-  0% {
+-    position: absolute;
+-    top: -100px;
+-    opacity: 0;
+-  }
+-  100% {
+-    top: 0;
+-    opacity: 1;
+-  }
+-}
+-@-webkit-keyframes fall-from-bottom {
+-  0% {
+-    position: absolute;
+-    bottom: -100px;
+-    opacity: 0;
+-  }
+-  100% {
+-    bottom: 0;
+-    opacity: 1;
+-  }
+-}
+-@-webkit-keyframes fall-from-left {
+-  0% {
+-    position: absolute;
+-    left: -100px;
+-    opacity: 0;
+-  }
+-  100% {
+-    left: 0;
+-    opacity: .9;
+-  }
+-}
+-@-webkit-keyframes fall-from-right {
+-  0% {
+-    position: absolute;
+-    right: -100px;
+-    opacity: 0;
+-  }
+-  100% {
+-    right: 0;
+-    opacity: .9;
+-  }
+-}
+-@-webkit-keyframes appear-from-back {
+-  0% {
+-    transform: scale(0);
+-  }
+-  70% {
+-    transform: scale(0);
+-  }
+-  80% {
+-    transform: scale(1.1);
+-    color: #fff;
+-  }
+-  100% {
+-    transform: scale(1);
+-  }
+-}
+ .anim {
+-  -webkit-animation: fall-from-bottom 1s ease;
+-  -moz-animation: fall-from-bottom 1s ease;
+-  -o-animation: fall-from-bottom 1s ease;
+   animation: fall-from-bottom 1s ease;
+ }
+ .all-events h2 {
+   font-size: 24px;

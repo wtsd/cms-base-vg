@@ -1,0 +1,182 @@
+site_short: ''
+meta:
+    keywords: ''
+    description: ''
+global_title: 'VG — Добро пожаловать на новый сайт. Пора его настроить немного!'
+address:
+    city: 'Санкт-Петербург'
+    address: 'Казанская ул., д. 7'
+    tel: '+7 (901) 234-56-78'
+    email: 'info@base.dev'
+
+
+feedback:
+    - {name: name, title: 'Имя', type: 'text', required: true, placeholder: 'Ваше имя'}
+    - {name: email, title: 'E-mail', type: 'text', required: true, placeholder: 'Ваш email'}
+    - {name: msg, title: 'Сообщение', type: 'textarea', required: true, placeholder: 'Текст сообщения'}
+gallery:
+    title: 'Галерея'
+    notfound: Галерея не найдена!
+readmode: 'Подробности…'
+
+subject: 'Отправлено письмо с сайта'
+subject-callback: 'Заказан обратный звонок'
+success: 'Письмо благополучно отправлено!'
+
+msg:
+    subj: Сообщение с сайта site_short
+    from: Robot site_short <no.reply@site_short>
+
+rss:
+    title: global_title
+    chname: "Канал: site_short"
+    url: http://site_short
+    descr: ''
+    generator: 'vg-base'
+    lang: 'ru-ru'
+    docs:  ''
+    wemail: email
+    memail: email
+
+site: http://site_short/
+
+statuses: ['Опубликовано', 'Закрыто', 'Удалено']
+
+
+copyright: '© Copyright, 2016'
+version: Версия
+
+login:
+  title: Вход
+  email: Email
+  password: Пароль
+  signin: Войти!
+  login_disclaimer: Только для авторизованных сотрудников
+
+caption_login: Войти
+caption_logout: Выйти
+caption_cart: Корзина
+
+payment_types:
+    1: Наличные курьеру
+    2: Банковская карта с курьером
+    3: Самовывоз
+    4: Банковская карта через сайт-партнёра
+    5: Яндекс.Деньги
+
+market_no: Нет в наличии
+
+cities: ['Санкт-Петербург']
+
+errortitle: Ошибка!
+msg404: 404! Страница не найдена
+msg404url: Ссылка %s не найдена на нашем сервере. Извините!
+tomain: На главную
+mainpage: Главная
+internalerror: Произошла внутренняя ошибка!
+recordexists: Такая запись уже существует!
+uploaderror: Ошибка загрузки файла!
+logoutsuccess: Вы благополучно вышли из системы.
+logouterror: 'Вы что-то даже не входили, а уже пытаетесь выйти.'
+comments:
+    required: Не все обязательные поля заполнены.
+    success: Комментарий успешно добавлен
+article:
+    cdate: Дата публикации
+    attachments: Приложения к статье
+callrequest:
+    title: Заказ обратного звонка
+    successmsg: Звонок благополучно заказан. В самое ближайшее время наш оператор свяжется с Вами.
+    successtitle: Звонок заказан!
+cart:
+    title: Корзина
+    orderformtitle: Оформление заказа
+    ordercheckedout: Заказ оформлен!
+    viewcart: Просмотр корзины
+    printcart: Печать корзины
+
+signin: Войти
+signup: Зарегистрироваться
+cabinet: Личный кабинет
+
+admin:
+    title: 'Административная консоль'
+    ver: '0.3'
+    template: 'default'
+    wrong_pass: 'Неверный пароль!'
+    need_to_auth: 'Требуется авторизация!'
+    enter: 'Войти!'
+    pass_lab: 'Пароль'
+    user_lab: 'Email'
+
+    meta:
+        author: 'Vladislav Gafurov'
+        viewport: 'width=device-width, initial-scale=1.0'
+        keywords: ''
+        description: ''
+
+
+    copyright: '© Copyright 2012 — 2016, <a href="http://facebook.com/vgafurov">Vladislav Gafurov</a>'
+
+    redir: 'Сейчас произойдёт перенаправление. Если не произошло, пройдите по ссылке: '
+    somethingwrong: 'Что-то пошло не так, но мы уже об этом проинформированы. Пожалуйста, попробуйте ещё раз.'
+
+    do_save: 'Сохранить'
+    tolst: 'К списку'
+    addanother: 'Создать новый'
+    saved: 'Данные благополучно сохранены!'
+
+    msgs:
+        all_saved: 'Данные благополучно сохранены!'
+        all_deleted: 'Запись успешно удалена!'
+    class_notif: 'notification'
+
+    statuses: ['Опубликовано', 'Закрыто', 'Удалено']
+    periods: ['не имеет значения','на час','на несколько дней','на длительный срок']
+    pages: 'Страницы: '
+    add: 'Добавить'
+    direct_link: 'Прямая ссылка'
+
+    dates:
+        - today: 'сегодня'
+        - yesterday: 'вчера'
+        - this_week: 'на этой неделе'
+        - two_weeks: 'на прошлой неделе'
+        - this_month: 'в этом месяце'
+        - two_months: 'в прошлом месяце'
+        - three_months: 'три месяца назад'
+
+
+    timeupdate: 'Обновить время'
+    loggedinas: 'В системе, как '
+    projectname: 'CMS'
+    authorizationrequired: 'Для работы нужна авторизация'
+    areyousurelogout: 'Вы уверены, что хотите выйти из системы управления контентом?'
+    areyousurelogouttitle: 'Выход'
+    areyousurelogoutcancel: 'Отменить'
+    areyousurelogoutdoit: 'Да, я хочу выйти!'
+    areyousuredel: 'Вы уверены, что хотите удалить этот объект?'
+    areyousuredeltitle: 'Удаление'
+    areyousuredelcancel: 'Отменить'
+    areyousuredeldoit: 'Да, я хочу удалить!'
+    delete: 'Удалить'
+    articledeleted: 'Материал благополучно удалён!'
+
+    profile:
+        - username: 'Имя пользователя'
+        - password: 'Пароль'
+        - password_ph: 'Пароль'
+        - update: 'Обновить профиль'
+        - m_saved: 'Профиль благополучно сохранён!'
+        - m_nsaved: 'Произошла ошибка при сохранении!'
+        - f_name: 'Полное имя'
+        - f_name_ph: 'Джон До'
+
+
+    modal:
+        caption: Выход?
+        signoff: 'Вы уверены, что хотите выйти из системы?'
+        cancel: Отменить
+        btnsignoff: Выйти
+        save: Сохранить
+        close: Закрыть

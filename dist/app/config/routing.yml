@@ -1,0 +1,195 @@
+'notfound': \wtsd\common\Controllers\General\NotFound::run
+'/': \wtsd\common\Controllers\General\Home::run
+'/all/(\d+)/': \wtsd\content\controllers\All::run
+'/all/(\d+)': \wtsd\content\controllers\All::run
+'/all/': \wtsd\content\controllers\All::run
+'/all': \wtsd\content\controllers\All::run
+#'/ajax': \wtsd\common\Controllers\General\Api::run
+'/callrequest/success': \wtsd\miscControllers\General\Callrequest::success
+'/callrequest': \wtsd\miscControllers\General\Callrequest::run
+'/donate/success': \wtsd\misc\Controllers\General\Donate::success
+'/donate': \wtsd\misc\Controllers\General\Donate::run
+'/feedback': \wtsd\misc\Controllers\General\Feedback::run
+'/redirect': \wtsd\common\Controllers\General\Redirect::run
+
+#'/login': \wtsd\common\Controllers\General\Login::run
+#'/logout': \wtsd\common\Controllers\General\Logout::run
+#'/user': \wtsd\common\Controllers\General\User::run
+
+# Content
+'/rss': \wtsd\content\controllers\Rss::run
+'/search/([\w+\-]+)': \wtsd\content\controllers\Search::run
+'/search': \wtsd\content\controllers\Search::run
+'/sitemap.xml': \wtsd\content\controllers\Sitemap::run
+'/article/(.+)': \wtsd\content\controllers\Article::run
+'/category/(\d+)': \wtsd\content\controllers\Category::redirectFromId
+'/category/(\d+)/': \wtsd\content\controllers\Category::redirectFromId
+'/category/([\w+\-]+)/(\d+)/': \wtsd\content\controllers\Category::view
+'/category/([\w+\-]+)': \wtsd\content\controllers\Category::view
+'/gallery/([\w+\-]+)/(\d+)/': \wtsd\content\controllers\Gallery::run
+'/gallery/([\w+\-]+)': \wtsd\content\controllers\Gallery::run
+'/gallery/': \wtsd\content\controllers\Gallery::run
+'/tag/([\w+\-]+)/(\d+)/': \wtsd\content\controllers\Tag::run
+'/tag/([\w+\-]+)': \wtsd\content\controllers\Tag::run
+'/tag/(.+)/(\d+)/': \wtsd\content\controllers\Tag::run
+'/tag/(.+)': \wtsd\content\controllers\Tag::run
+'/user/([\d+\-]+)/(\d+)/': \wtsd\content\controllers\User::run
+'/user/([\d+\-]+)': \wtsd\content\controllers\User::run
+
+# Market
+'/cart/print': \wtsd\market\Controllers\Cart::doprint
+'/cart/finish': \wtsd\market\Controllers\Cart::finish
+'/cart/(\w+)': \wtsd\market\Controllers\Cart::show
+'/cart': \wtsd\market\Controllers\Cart::run
+'/offer/([\w+\-]+)': \wtsd\market\Controllers\Offer::view
+'/products/([\w+\-]+)/(\d+)': \wtsd\market\Controllers\Products::run
+'/products/([\w+\-]+)': \wtsd\market\Controllers\Products::run
+'/products': \wtsd\market\Controllers\Products::run
+'/search-offer': \wtsd\market\Controllers\SearchOffer::run
+'/vendor/([\w+\-]+)': \wtsd\market\Controllers\Vendor::run
+# Cabinet
+'/signup': \wtsd\market\Controllers\Signup::run
+'/signin': \wtsd\market\Controllers\Signin::run
+'/cabinet': \wtsd\market\Controllers\Cabinet::run
+
+
+# Events
+'/event/ajax/register/': \wtsd\event\controllers\Ajax\Register::run
+'/event/ajax/getform/': \wtsd\event\controllers\Ajax\Getform::run
+'/event/(.+)': \wtsd\event\controllers\Event::run
+'/event': \wtsd\event\controllers\Event::run
+'/events': \wtsd\event\controllers\Events::run
+
+'/market/result/': \wtsd\market\Controllers\Payment::result
+'/market/success/': \wtsd\market\Controllers\Payment::success
+'/market/fail/': \wtsd\market\Controllers\Payment::fail
+
+### ADMIN
+'notfound': \wtsd\common\Controllers\Admin\NotFound::run
+'/adm': \wtsd\user\Controllers\Auth::run
+'/adm/ajax/(.+)': \wtsd\common\Controllers\Admin\Ajax::run
+'/adm/ajax': \wtsd\common\Controllers\Admin\Ajax::run
+'/adm/auth': \wtsd\user\Controllers\Auth::run
+'/adm/logout': \wtsd\user\Controllers\Logout::run
+'/adm/settings': \wtsd\common\Controllers\Admin\Settings::run
+'/adm/profile': \wtsd\user\Controllers\Profile::run
+'/adm/profile/save': \wtsd\user\Controllers\Profile::save
+
+'/adm/dashboard': \wtsd\common\Controllers\Admin\Dashboard::run
+
+'/adm/feedback': \wtsd\misc\Controllers\Admin\Feedback::run
+
+'/adm/slider/': \wtsd\misc\Controllers\Admin\Slider::run
+'/adm/slider/(.+)': \wtsd\misc\Controllers\Admin\Slider::run
+
+# Content
+'/adm/article/(.+)': \wtsd\content\controllers\admin\Article::run
+'/adm/image/(.+)': \wtsd\content\controllers\admin\Image::run
+'/adm/category/(.+)': \wtsd\content\controllers\admin\Category::run
+'/adm/gallery/': \wtsd\content\controllers\admin\Gallery::run
+'/adm/gallery/browse(\/+)([\d+]+)': \wtsd\content\controllers\admin\Gallery::run
+'/adm/gallery/(.+)': \wtsd\content\controllers\admin\Gallery::run
+
+'/adm/article/add/([\d+\-]+)': \wtsd\content\controllers\admin\Article::run
+'/adm/image/add/([\d+\-]+)': \wtsd\content\controllers\admin\Image::run
+'/adm/category/add/([\d+\-]+)': \wtsd\content\controllers\admin\Category::run
+'/adm/gallery/add/([\d+\-]+)': \wtsd\content\controllers\admin\Gallery::run
+
+'/adm/article/edit/([\d+\-]+)': \wtsd\content\controllers\admin\Article::run
+'/adm/image/edit/([\d+\-]+)': \wtsd\content\controllers\admin\Image::run
+'/adm/category/edit/([\d+\-]+)': \wtsd\content\controllers\admin\Category::run
+'/adm/gallery/edit/([\d+\-]+)': \wtsd\content\controllers\admin\Gallery::run
+
+'/adm/article/delete/([\d+\-]+)': \wtsd\content\controllers\admin\Article::run
+'/adm/image/delete/([\d+\-]+)': \wtsd\content\controllers\admin\Image::run
+'/adm/category/delete/([\d+\-]+)': \wtsd\content\controllers\admin\Category::run
+'/adm/gallery/delete/([\d+\-]+)': \wtsd\content\controllers\admin\Gallery::run
+
+
+# Market
+'/adm/offer/(.+)': \wtsd\market\Controllers\admin\Offer::run
+'/adm/pcategory/(.+)': \wtsd\market\Controllers\admin\Pcategory::run
+'/adm/orders/status/([\d+]+)/([\w+\_\-]+)': \wtsd\market\Controllers\admin\Orders::changeStatus
+'/adm/orders/(.+)': \wtsd\market\Controllers\admin\Orders::run
+'/adm/pspec/(.+)': \wtsd\market\Controllers\admin\Pspec::run
+'/adm/vendor/(.+)': \wtsd\market\Controllers\admin\Vendor::run
+
+'/adm/offer/add/([\d+\-]+)': \wtsd\market\Controllers\admin\Offer::run
+'/adm/pcategory/add/([\d+\-]+)': \wtsd\market\Controllers\admin\Pcategory::run
+'/adm/orders/add/([\d+\-]+)': \wtsd\market\Controllers\admin\Orders::run
+'/adm/pspec/add/([\d+\-]+)': \wtsd\market\Controllers\admin\Pspec::run
+'/adm/vendor/add/([\d+\-]+)': \wtsd\market\Controllers\admin\Vendor::run
+
+'/adm/offer/edit/([\d+\-]+)': \wtsd\market\Controllers\admin\Offer::run
+'/adm/pcategory/edit/([\d+\-]+)': \wtsd\market\Controllers\admin\Pcategory::run
+'/adm/orders/edit/([\d+\-]+)': \wtsd\market\Controllers\admin\Orders::run
+'/adm/pspec/edit/([\d+\-]+)': \wtsd\market\Controllers\admin\Pspec::run
+'/adm/vendor/edit/([\d+\-]+)': \wtsd\market\Controllers\admin\Vendor::run
+
+'/adm/offer/delete/([\d+\-]+)': \wtsd\market\Controllers\admin\Offer::run
+'/adm/pcategory/delete/([\d+\-]+)': \wtsd\market\Controllers\admin\Pcategory::run
+'/adm/orders/delete/([\d+\-]+)': \wtsd\market\Controllers\admin\Orders::run
+'/adm/pspec/delete/([\d+\-]+)': \wtsd\market\Controllers\admin\Pspec::run
+'/adm/vendor/delete/([\d+\-]+)': \wtsd\market\Controllers\admin\Vendor::run
+
+# Market / Branches
+
+'/adm/branch': \wtsd\market\Controllers\admin\Branch::lst
+'/adm/branch/': \wtsd\market\Controllers\admin\Branch::lst
+'/adm/branch/(\w+)': \wtsd\market\Controllers\admin\Branch::run
+'/adm/branch/([\d+\-]+)': \wtsd\market\Controllers\admin\Branch::run
+
+'/api/v1/branches/(\w+)': \wtsd\market\Controllers\Api\Branches::run
+'/api/v1/branches/(\w+)/(\d+)': \wtsd\market\Controllers\Api\Branches::run
+'/api/v1/branches/': \wtsd\market\Controllers\Api\Branches::run
+'/api/v1/branches': \wtsd\market\Controllers\Api\Branches::run
+
+#################
+
+'/adm/user': \wtsd\user\Controllers\User::lst
+'/adm/user/': \wtsd\user\Controllers\User::lst
+'/adm/user/(\w+)': \wtsd\user\Controllers\User::run
+'/adm/user/([\d+\-]+)': \wtsd\user\Controllers\User::run
+
+'/api/v1/authorize/login': \wtsd\user\Controllers\Api\Authorize::run
+'/api/v1/users/(\w+)': \wtsd\user\Controllers\Api\Users::run
+'/api/v1/users/(\w+)/(\d+)': \wtsd\user\Controllers\Api\Users::run
+'/api/v1/users/': \wtsd\user\Controllers\Api\Users::run
+'/api/v1/users': \wtsd\user\Controllers\Api\Users::run
+
+
+'/adm/group': \wtsd\user\Controllers\Group::lst
+'/adm/group/': \wtsd\user\Controllers\Group::lst
+'/adm/group/(\w+)': \wtsd\user\Controllers\Group::run
+'/adm/group/([\d+\-]+)': \wtsd\user\Controllers\Group::run
+
+'/api/v1/groups/(\w+)': \wtsd\user\Controllers\Api\Groups::run
+'/api/v1/groups/(\w+)/(\d+)': \wtsd\user\Controllers\Api\Groups::run
+'/api/v1/groups/': \wtsd\user\Controllers\Api\Groups::run
+'/api/v1/groups': \wtsd\user\Controllers\Api\Groups::run
+
+
+'/api/v1/orders/intcomment/(\d+)': \wtsd\market\Controllers\Api\Orders::intcomment
+
+'/api/v1/upload': \wtsd\common\Controllers\Api\Upload::run
+'/api/v1/upload\(\w+)': \wtsd\common\Controllers\Api\Upload::run
+
+'/api/v1/cart/add': \wtsd\market\Controllers\Api\Cart::run
+'/api/v1/cart/clear': \wtsd\market\Controllers\Api\Cart::run
+'/api/v1/cart/remove': \wtsd\market\Controllers\Api\Cart::run
+'/api/v1/cart/quantity': \wtsd\market\Controllers\Api\Cart::run
+
+'/api/v1/feedback/send': \wtsd\misc\Controllers\Api\Feedback::run
+
+
+####################
+
+'/adm/ajax/(.+)': \wtsd\common\Controllers\Admin\Ajax::run
+'/api/(\w+)/(\w+)': \wtsd\common\Controllers\Api::run
+'/api': \wtsd\common\Controllers\Api::run
+
+
+
+
+'/adm/(.+)': '\wtsd\common\AdminController::showError'
+'/api/(.+)': '\wtsd\common\Controllers\Api::error'

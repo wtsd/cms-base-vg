@@ -1,0 +1,181 @@
+
+@-moz-keyframes dropDown
+{
+    0%
+    {
+        -moz-transform: translateY(-100%);
+    }
+    100%
+    {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes dropDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes dropDown
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+.content_ani
+{
+    -webkit-animation-name: rightOut;
+       -moz-animation-name: rightOut;
+            animation-name: rightOut;
+    -webkit-animation-duration: .5s;
+       -moz-animation-duration: .5s;
+            animation-duration: .3s;
+    -webkit-animation-timing-function: ease-in;
+       -moz-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+       -moz-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+@-moz-keyframes rightOut
+{
+    0%
+    {
+        -moz-transform: translateX(200%);
+    }
+    100%
+    {
+        -moz-transform: translateX(0);
+    }
+}
+@-webkit-keyframes rightOut
+{
+    0%
+    {
+        -webkit-transform: translateX(200%);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes rightOut
+{
+    0%
+    {
+        transform: translateX(200%);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fall-from-top
+{
+    0%
+    {
+        position: absolute;
+        top: -100px;
+
+        opacity: 0;
+    }
+    100%
+    {
+        top: 0;
+
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fall-from-bottom
+{
+    0%
+    {
+        position: absolute;
+        bottom: -100px;
+
+        opacity: 0;
+    }
+    100%
+    {
+        bottom: 0;
+
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fall-from-left
+{
+    0%
+    {
+        position: absolute;
+        left: -100px;
+
+        opacity: 0;
+    }
+    100%
+    {
+        left: 0;
+
+        opacity: .9;
+    }
+}
+
+@-webkit-keyframes fall-from-right
+{
+    0%
+    {
+        position: absolute;
+        right: -100px;
+
+        opacity: 0;
+    }
+    100%
+    {
+        right: 0;
+
+        opacity: .9;
+    }
+}
+
+@-webkit-keyframes appear-from-back
+{
+    0%
+    {
+        transform: scale(0);
+    }
+    70%
+    {
+        transform: scale(0);
+    }
+    80%
+    {
+        transform: scale(1.1);
+
+        color: #fff;
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+
+.anim
+{
+    -webkit-animation: fall-from-bottom 1s ease;
+       -moz-animation: fall-from-bottom 1s ease;
+         -o-animation: fall-from-bottom 1s ease;
+            animation: fall-from-bottom 1s ease;
+}

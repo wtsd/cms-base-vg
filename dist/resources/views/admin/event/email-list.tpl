@@ -1,0 +1,1 @@
+{foreach from=$records item=record}{$record.email}, {/foreach}

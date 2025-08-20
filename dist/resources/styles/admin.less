@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+@import 'modules/admin-all';
+@import 'helpers/filetypes';
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 60px;
+}
+
+body.DEV a.navbar-brand {
+  color: #84FF84;
+}
+body.PROD a.navbar-brand {
+  color: #FF9B9B;
+}
+
+
+.modalLoading {
+    display:    none;
+    position:   fixed;
+    z-index:    9999;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('/web/images/loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modalLoading {
+    display: block;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+
+}
+
+.nav-sidebar {
+  margin-right: -21px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  & > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  & > .active > a,
+  & > .active > a:hover,
+  & > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+  }
+}
+/*
+ * Main content
+ */
+
+/* Feedback */
+.feedback-list {
+    width: 700px;
+  .body {
+      font-size: .7em;
+      line-height: .9em;
+      padding-left: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 500px;
+  }
+  .info {
+      float: left;
+  }
+  .from-to {
+      float: right;
+      font-size: .8em;
+    .from {
+        float: left;
+        display: inline-block;
+        color: #aaa;
+    }
+    .to {
+        margin-left: 10px;
+        display: inline-block;
+    }
+  }
+  .subject {
+      clear: both;
+      label {
+          font-weight: bold;
+          float: left;
+          margin-right: 10px;
+      }
+      span {
+          display: inline-block;
+      }
+  }
+  .body dl {
+      margin: 20px;
+      dt {
+          width: 150px;
+          float: left;
+          margin-right: 10px;
+      }
+  }
+}
+
+/* Gallery form */
+
+.save-panel {
+  top: 0;
+  left: 0;
+  padding: .05em;
+  width: 100%;
+  height: 3em;
+  z-index: 1000;
+  background: rgba(255, 255, 255, .7);
+}
+
+/* Photos inside forms */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    width: 100%
+}
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.photos {
+    width: 100%;
+    border: 1px solid #dedede;
+    display: block;
+    min-height: 150px;
+    text-align: center;
+    overflow: auto;
+    height: 250px;
+
+    .single-photo {
+      /*padding: 2px;*/
+      overflow: hidden;
+      display: inline-block;
+      position: relative;
+      max-width: 45%;
+
+      img {
+        max-height: 170px;
+        max-width: 100%;
+      }
+      
+      .photo-toolbar {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: rgba(255, 255, 255, .8);
+          width: 100%;
+          padding: 3px;
+          height: 20px;
+          opacity: .7;
+          font-size: .9em;
+          text-align: right;
+          &:hover {
+              opacity: 1;
+          }
+          .delete {
+              color: #ff0000;
+          }
+          a {
+              margin-right: 10px;
+              opacity: .6;
+              &:hover {
+                  opacity: 1;
+              }
+          }
+      }
+    }
+}
+
+
+.login-right {
+    border-left: 1px solid #d0d0d0;
+    padding: 20px;
+}
+
+
+.color-samples {
+  clear: both;
+}
+.color-val {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d0d0d0;
+  float: left;
+  margin: 5px;
+  &:hover {
+    border: 1px solid #a0a0a0;
+  }
+}
+
+.attachments {
+  display: block;
+  min-height: 120px;
+  overflow: auto;
+}
+.single-attachment {
+  min-width: 100px;
+  display: block;
+  text-align: center;
+  float: left;
+  margin: 10px;
+}
+
+
+
+
+.alert-box {
+  overflow: visible;
+  height: 4em;
+  .alert {
+    margin: 0;
+  }
+}
+.navbar-header {
+  img {
+    margin-top: 5px;
+    max-height: 40px;
+  }
+}
+.images-popover img {
+  max-height: 150px;
+  float: left;
+  .popover-body {
+    max-height: 200px;
+    overflow-x: scroll;
+    body {
+      max-width: 100px;
+    }
+  }
+}
+
+.transparent-input {
+  background: rgba(255, 255, 255, .2);
+  color: #fff;  
+}
+.input-group {
+  width: 100%;
+}
+.input-group-addon {
+    width: 40px;
+}

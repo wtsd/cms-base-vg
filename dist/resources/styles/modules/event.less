@@ -1,0 +1,83 @@
+.all-events h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.single-event {
+    width: 50%;
+    display: block;
+    float: left;
+    padding: 2px;
+
+    .img {
+        max-height: 200px;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.event-full {
+    width: 100%;
+    .img  {
+        max-height: 350px;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.btn-submit {
+    border: 1px solid #808080;
+    display: block;
+    background: #404040;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fefefe;
+    margin: 0 auto;
+    min-width: 150px;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+.btn-submit:hover {
+    color: #808080;
+    color: #a0a0a0;
+}
+
+.event-schedule table {
+    border-collapse: collapse;
+    border: 1px solid #a0a0a0;
+    font-size: 14px;
+    margin: 0 auto;
+    td,
+    th {
+        border: 1px solid #a0a0a0;
+        padding: 3px;
+        text-align: center;
+        max-width: 120px;
+    }
+}
+
+.event-registration {
+    form {
+        width: 50%;
+        float: left;
+    }
+    .form-input {
+        label {
+            width: 150px;
+            text-align: right;
+
+        }
+        input,
+        textarea {
+            width: 250px;
+            @include border-radius(3px);
+            border: 1px solid #a0a0a0;
+        }
+    }
+}
