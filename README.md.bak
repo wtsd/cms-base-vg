@@ -1,0 +1,65 @@
+# Basic repository for the web-site core
+
+## Synopsis
+
+For whom it may concern: for researchers and web-developers, students and risky guys. I was making pet-projects for years using the same codebase, modifying structures and implementing easy-to-deploy and maintain framework. If you are interested in implementing it in your projects, be my guest!
+
+## INSTALLATION
+
+You need to clone the repository to your project_dir. The host adding script is made for a standard Ubuntu + Apache2 configuration. It creates a virtual host, a record in `/etc/hosts` and database is added by a default `root` user without a password. In case you need other credentials, use the arguments.
+
+    $ git clone git@bitbucket.org:vgafurov/cms-base.git project_dir
+
+    $ cd project_dir
+
+    $ sudo php scripts/add-host.php hostname.dev
+
+    $ php scripts/add-database.php db_name [db_user db_pass]
+
+    $ cd dist
+
+If composer is not install:
+    
+    $ curl -sS https://getcomposer.org/installer | php
+
+    $ php composer.phar install
+
+In case, there is no bower or nodejs on your system, install them. For Ubuntu:
+
+    $ sudo apt-get install nodejs npm
+
+    $ npm install -g bower                         
+
+Then you need to install front-end dependencies:
+
+    $ bower install
+
+    $ cp app/config/config-dist.yml app/config/config.yml
+
+Do the configuration, using your fav editor.
+
+    $ cp app/config/database-dist.yml app/config/database-dev.yml
+
+    $ cp app/config/database-dist.yml app/config/database-prod.yml
+
+Install Grunt:
+
+    $ npm install grunt --save-dev
+
+Use Grunt:
+
+    $ grunt
+
+While developing, better use:
+
+    $ grunt watch
+
+Use of SASS:
+
+    $ sass --watch path/to/file.scss:output/path/file.css
+
+The same here. Do the configuration.
+
+## CONTACTS
+
+If you have any questions, feel free to contact me: warlockfx@gmail.com

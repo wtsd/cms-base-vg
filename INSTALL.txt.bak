@@ -1,0 +1,6 @@
+1. Pull repository.
+2. Run the following script:
+	php scripts/add-database.php db_name
+3. Edit dist/app/config/config.yml file.
+4. Edit dist/app/config/database-dev.yml and dist/app/config/database-prod.yml files and set databases credentials.
+5. Change dist/temp, dist/img/* and dist/uploads permissions to 777.
