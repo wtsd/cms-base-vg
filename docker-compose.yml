@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    ports: ["8080:80"]
+    volumes: ["./:/var/www/html"]
+    environment:
+      - DB_HOST=db
+      - DB_NAME=${DB_NAME:-cms}
+      - DB_USER=${DB_USER:-cms}
+      - DB_PASS=${DB_PASS:-cms}
+    depends_on: [db]
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: ${DB_NAME:-cms}
+      MYSQL_USER: ${DB_USER:-cms}
+      MYSQL_PASSWORD: ${DB_PASS:-cms}
+      MYSQL_ROOT_PASSWORD: root
+    ports: ["3307:3306"]
+    volumes: ["db_data:/var/lib/mysql"]
+volumes:
+  db_data:
